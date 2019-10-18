@@ -8,10 +8,10 @@ void main(){
 	fclose(random);
 	for( int i = 0; i < LEN; i++ ) 
 	{   int k = key[i];
-		printBi(k);
+		bi(k);
 	}
 }
-void printBi(int k){
+void bi(int k){
 	int l = sizeof(k)*8;
     int i;
     if(i == 0)
