@@ -12,7 +12,7 @@ void main(){
 	}
 }
 void printBi(int k){
-	int l = sizeof(n)*8;
+	int l = sizeof(k)*8;
     int i;
     if(i == 0)
     {
