@@ -8,6 +8,6 @@ void main(){
 	fclose(random);
 	for( int i = 0; i < LEN; i++ ) 
 	{
-		printf( "%s", key[i] );
+		printf( "%d", key[i] );
 	}
 }
