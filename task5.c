@@ -22,10 +22,10 @@ void printBi(int k){
 
     for(i = l-1; i >= 0; i --)
     {
-        if(n&(1<<i)) break;
+        if(k&(1<<i)) break;
     }
     for(;i>=0; i --){
-        printf("%d", (n&(1<<i)) != 0);
+        printf("%d", (k&(1<<i)) != 0);
 
 }
 }
