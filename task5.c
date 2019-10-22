@@ -4,27 +4,19 @@
 
 
 void bi(int k){
-	int l = sizeof(k)*8;
-    int i,p;
-    if(i == 0)
-    {
-         printf("0");
-         return;
-     }
+	int x=0,a[10];
+	printf("请输入转换的数:\n");
+	scanf("%d",&n);
+	for(i = 0; i < 8; i++)
+	{
+	a[x++]=k%2; 
+	k/=k;
+	}
+	--x;
+	while(x>=0)
+	printf("%d",a[x--]);
 
-    for(i = l-1; i >= 0; i --)
-    {
-        if(k&(1<<i)) break;
-    }
 
-	for(p = 8-i;p>=0; p --){
-        printf("%d", 0);
-
-}
-    for(;i>=0; i --){
-        printf("%d", (k&(1<<i)) != 0);
-
-}
 }
 
 
