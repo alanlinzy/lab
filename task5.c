@@ -4,7 +4,7 @@
 
 
 void bi(int k){
-	int l = 8;
+	int l = sizeof(k)*8;
     int i;
     if(i == 0)
     {
@@ -16,6 +16,10 @@ void bi(int k){
     {
         if(k&(1<<i)) break;
     }
+	for(;8-i>=0; i --){
+        printf("%d", 0);
+
+}
     for(;i>=0; i --){
         printf("%d", (k&(1<<i)) != 0);
 
