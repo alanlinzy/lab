@@ -2,24 +2,18 @@
 #include<stdlib.h>
 #define LEN 32 // 256 bits
 
-void bi(int k){
-	int l = sizeof(k)*8;
-    int i;
-    if(i == 0)
-    {
-         printf("0");
-         return;
-     }
+void bi(int k)
+{
+	int x=0,a[100];
 
-    for(i = l-1; i >= 0; i --)
-    {
-        if(k&(1<<i)) break;
-    }
-    for(;i>=0; i --){
-        printf("%d", (k&(1<<i)) != 0);
-
-}
-}
+	while(k){
+		a[x++]=k%2; 
+		k/=2;
+		}
+	--x;
+	while(x>=0)
+	printf("%d",a[x--]);
+} 
 
 void main(){
 	unsigned char *key = (unsigned char *)malloc(sizeof(unsigned char)*LEN); 
