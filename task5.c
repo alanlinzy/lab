@@ -7,7 +7,7 @@ void bi(int k){
 	int x=0,a[10];
 	printf("请输入转换的数:\n");
 	scanf("%d",&n);
-	for(i = 0; i < 8; i++)
+	for(int i = 0; i < 8; i++)
 	{
 	a[x++]=k%2; 
 	k/=k;
