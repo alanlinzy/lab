@@ -16,7 +16,8 @@ void bi(int k){
     {
         if(k&(1<<i)) break;
     }
-	for(;8-i>=0; i --){
+	p = 8-i
+	for(;p>=0; p --){
         printf("%d", 0);
 
 }
