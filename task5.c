@@ -8,7 +8,7 @@ void bi(int k){
 	for(int i = 0; i < 8; i++)
 	{
 	a[x++]=k%2; 
-	k/=k;
+	k/=2;
 	}
 	--x;
 	while(x>=0)
